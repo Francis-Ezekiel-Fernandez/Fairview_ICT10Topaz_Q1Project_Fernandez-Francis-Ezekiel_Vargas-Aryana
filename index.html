@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3 Practice 3</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.3.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2025.3.1/core.js"></script>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+</head>
+<body>
+
+    <h1>PY-Numbers</h1>
+    <br>
+
+    <form action="">
+        <input type="text"  id="input1" placeholder="Enter a number">
+        <br>
+        <input type="text"  id="input2" placeholder="Enter a number">
+        <br>
+        <button type="button" py-click="adding_numbers">Solve</button>
+        
+        <br>
+        <input type="checkbox" id="item1" value="129">
+            <label for="item1" id="label1">Spanish Latte</label>
+            <br>
+<input type="radio" id="regular" name="size" value="0" checked>
+                <label for="regular">Regular (+ Php0)</label>
+
+            <input type="radio" id="large" name="size" value="30" checked>
+                <label for="regular">Large (+ Php30)</label>
+            <br>
+            <button type="button" py-click="create_order">Create Order</button>
+    
+            <br>
+        <label for="Coffee">Coffee</label>
+        <br>
+        <select id="coffee">
+            <option value="0">--Select Here--</option>
+            <option value="99">Americano</option>
+            <option value="129">Spanish Latte</option>
+            <option value="159">Affogato</option>
+        </select>
+        <br>
+            <button type="button" py-click="place_order">Place Order</button>
+    
+            <br>
+
+
+                        
+    
+        </form>
+
+    <div id="output1"></div> 
+    <div id="output2"></div> 
+    <div id="output3"></div> 
+    <script type="py" src="main.py"></script>
+</body>
+</html>
