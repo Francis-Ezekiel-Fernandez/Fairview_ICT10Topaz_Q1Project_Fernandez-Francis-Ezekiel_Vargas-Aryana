@@ -13,6 +13,7 @@
 
     <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
     <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <style>
 
 .navbar {
@@ -26,8 +27,6 @@
      <nav class="navbar navbar-expand-lg navbar-light bg-white">
   <div class="container-fluid">
 
-    <a class="navbar-brand" href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQchdgIeG7ozkE0TV__FakwgnYka2ouCJgzNg&s" alt="oblogo" class="" id="logo"></a>
-
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -35,83 +34,73 @@
     <div class="collapse navbar-collapse" id="mynavbar">
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
-          <a class="nav-link" href="">Home</a>
+          <a class="nav-link" href="index.html">Receipt Generator</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="">Fare Matrix</a>
+          <a class="nav-link" href="page2.html">SKU Generator</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="">Schedule</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="">Help</a>
-        </li>
-      </ul>
+    </nav>
 </div>
 
-</div>
+</div><br>
 <center>
     <h1>PY-Numbers</h1>
     <br>
 
+    <div id="main" class="font-monospace fw-bold">
+
+
     <form action="">
 
-        <input type="checkbox" id="item1" value="129">
-            <label for="item1" id="label1">Spanish Latte</label>
-            <br>
-<input type="radio" id="regular" name="size" value="0" checked>
-                <label for="regular">Regular (+ Php0)</label>
+        <h1>-----Gan-----</h1>
+        <br>
+        <input type="checkbox" id="item1" value="2000">
+        <label for="item1" id="label1">Gan 12 Maglev</label>    
 
-            <input type="radio" id="large" name="size" value="30" checked>
-                <label for="regular">Large (+ Php30)</label>
             <br>
-        <input type="checkbox" id="item1" value="129">
-            <label for="item1" id="label1">Spanish Latte</label>
             <br>
-<input type="radio" id="regular" name="size" value="0" checked>
-                <label for="regular">Regular (+ Php0)</label>
 
-            <input type="radio" id="large" name="size" value="30" checked>
-                <label for="regular">Large (+ Php30)</label>
-            <br>
-        <input type="checkbox" id="item1" value="129">
-            <label for="item1" id="label1">Spanish Latte</label>
-            <br>
-<input type="radio" id="regular" name="size" value="0" checked>
-                <label for="regular">Regular (+ Php0)</label>
+        <input type="checkbox" id="item2" value="2800">
+        <label for="item2" id="label2">Gan 17 MagDrive</label>   
 
-            <input type="radio" id="large" name="size" value="30" checked>
-                <label for="regular">Large (+ Php30)</label>
             <br>
-        <input type="checkbox" id="item1" value="129">
-            <label for="item1" id="label1">Spanish Latte</label>
             <br>
-<input type="radio" id="regular" name="size" value="0" checked>
-                <label for="regular">Regular (+ Php0)</label>
 
-            <input type="radio" id="large" name="size" value="30" checked>
-                <label for="regular">Large (+ Php30)</label>
-            <br>
-        <input type="checkbox" id="item1" value="129">
-            <label for="item1" id="label1">Spanish Latte</label>
-            <br>
-<input type="radio" id="regular" name="size" value="0" checked>
-                <label for="regular">Regular (+ Php0)</label>
-
-            <input type="radio" id="large" name="size" value="30" checked>
-                <label for="regular">Large (+ Php30)</label>
-            <br>
-        <input type="checkbox" id="item1" value="129">
-            <label for="item1" id="label1">Spanish Latte</label>
-            <br>
+        <input type="checkbox" id="item3" value="1800">
+        <label for="item3" id="label3">Gan V100 Maglev UV</label>    
+        
             <br><br>
-            <button type="button" py-click="create_order">Create Order</button>
-    
-        </form>
+            <h1>-----Moyu-----</h1>
+            <br>
+        <input type="checkbox" id="item4" value="2750">
+        <label for="item4" id="label4">Moyu Super Weilong V2</label>    
+        
+            <br>
+            <br>
+        <input type="checkbox" id="item5" value="2500">
+        <label for="item5" id="label5">Moyu Weilong V11 SE</label>
+        
+            <br>
+            <br>
+        <input type="checkbox" id="item6" value="1300">
+        <label for="item6" id="label6">Moyu RS3M V5</label>   
+        
+            <br><br>
 
+            <button type="button" class="btn btn-primary" py-click="create_order">Create Order</button>
+    
+            <br>
+   
+        </form><br>
+<h1>-----Receipt:-----</h1><br>
+
+    <h3>Subtotal:</h3>
     <div id="output1"></div> 
+    <h3>Tax:</h3>
     <div id="output2"></div> 
+    <h3>Grandtotal:</h3>
     <div id="output3"></div> 
+
     <script type="py" src="main.py"></script>
     </center>
 </body>
