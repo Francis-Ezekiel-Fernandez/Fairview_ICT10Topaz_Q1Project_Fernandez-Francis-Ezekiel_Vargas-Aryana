@@ -50,7 +50,6 @@ def generate(e):
     Squantities = squantity.upper()
     Squantity = str(Squantities)
     
-
     finalsku = Category + "-" + Pname + "-" + Squantity
 
-    display(f"{finalsku}.", target="sku")
+    display(f"{finalsku}", target="sku")
