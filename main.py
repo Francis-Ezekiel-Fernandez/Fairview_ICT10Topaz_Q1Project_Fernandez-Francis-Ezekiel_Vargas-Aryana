@@ -37,3 +37,20 @@ def create_order(e):
     grandtotal = subtotal + tax
 
     display(f"{pesos}" + f"{grandtotal}", target="output3")
+
+def generate(e):
+    document.getElementById("sku").innerHTML = ""  # Clear previous output
+
+    category = document.getElementById('categories').value #gets value of categories
+    pname = document.getElementById('productname').value   #gets value of product name
+    squantity = document.getElementById('quantity').value  #gets value of quantity
+
+    Category = category.upper()[0:4]
+    Pname = pname.upper()[0:3]
+    Squantities = squantity.upper()
+    Squantity = str(Squantities)
+    
+
+    finalsku = Category + "-" + Pname + "-" + Squantity
+
+    display(f"{finalsku}.", target="sku")
