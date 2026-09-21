@@ -45,9 +45,9 @@ def generate(e):
     pname = document.getElementById('productname').value   #gets value of product name
     squantity = document.getElementById('quantity').value  #gets value of quantity
 
-    Category = category.upper()[0:4]
-    Pname = pname.upper()[0:3]
-    Squantities = squantity.upper()
+    Category = category.upper()[0:2]
+    Pname = pname.upper()[0:2]
+    Squantities = squantity.upper()[0:4]
     Squantity = str(Squantities)
     
     finalsku = Category + "-" + Pname + "-" + Squantity
